@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Flutter Mobile Developer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar.jpeg",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -52,7 +52,7 @@ const home = {
 
 const about = {
   label: "About",
-  title: "About me",
+  title: "Aditya Ibrar Abdillah",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,

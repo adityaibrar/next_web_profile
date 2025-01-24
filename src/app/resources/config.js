@@ -47,7 +47,7 @@ const effects = {
     opacity: 20,
   },
   lines: {
-    display: false,
+    display: true,
     color: "neutral-alpha-weak",
     opacity: 100,
   },
