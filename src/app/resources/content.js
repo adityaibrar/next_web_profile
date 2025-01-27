@@ -168,20 +168,21 @@ const about = {
     title: "Projects",
     skills: [
       {
-        title: "Figma",
+        title: "SIMPRES",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            SIMPRES is an application specifically designed to facilitate and
+            automate the teacher attendance process. This application was
+            created to facilitate the monitoring of teacher attendance and
+            teaching activities in the classroom. By using the latest
+            technology, SIMPRES ensures that the attendance process is fast,
+            accurate, and transparent.
+          </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/SIMPRES.png",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -189,14 +190,40 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
+        title: "Boarding School Cooperative POS and Online SPP Payment",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            I am here as a mobile developer. this application is used in
+            boarding schools which functions to purchase products in a
+            cooperative digitally. this application is also useful for santri
+            guardians who can make tuition payments and send money to students.
+            this application also integrates with payment gateway.
+          </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/Madaf Burga.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Si-Beka",
+        description: (
+          <>
+            Si-Beka application is an application that can display student data,
+            such as top student achievements on the dashboard display, violation
+            data and handling data on the menu display, as well as profiles to
+            view the personal data of students who have accounts.
+          </>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/Si-Beka.png",
             alt: "Project image",
             width: 16,
             height: 9,
