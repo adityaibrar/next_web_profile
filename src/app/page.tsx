@@ -68,6 +68,11 @@ export default function About() {
       display: about.projects.display,
       items: about.projects.skills.map((skill) => skill.title),
     },
+    {
+      title: about.honor.title,
+      display: about.honor.display,
+      items: about.honor.skills.map((skill) => skill.title),
+    },
   ];
   return (
     <Column maxWidth="m">
@@ -316,6 +321,51 @@ export default function About() {
               </Heading>
               <Column fillWidth gap="l">
                 {about.projects.skills.map((skill, index) => (
+                  <Column key={`${skill}-${index}`} fillWidth gap="4">
+                    <Text variant="heading-strong-l">{skill.title}</Text>
+                    <Text variant="body-default-m" onBackground="neutral-weak">
+                      {skill.description}
+                    </Text>
+                    {skill.images && skill.images.length > 0 && (
+                      <Flex fillWidth paddingTop="m" gap="12" wrap>
+                        {skill.images.map((image, index) => (
+                          <Flex
+                            key={index}
+                            border="neutral-medium"
+                            radius="m"
+                            minWidth={image.width}
+                            height={image.height}
+                          >
+                            <SmartImage
+                              enlarge
+                              radius="m"
+                              sizes={image.width.toString()}
+                              alt={image.alt}
+                              src={image.src}
+                            />
+                          </Flex>
+                        ))}
+                      </Flex>
+                    )}
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
+          {about.honor.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.honor.title}
+                variant="display-strong-s"
+                marginBottom="40"
+                marginTop="40"
+              >
+                {about.honor.title}
+              </Heading>
+              <Column fillWidth gap="l">
+                {about.honor.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
                     <Text variant="heading-strong-l">{skill.title}</Text>
                     <Text variant="body-default-m" onBackground="neutral-weak">
