@@ -1,5 +1,3 @@
-import { InlineCode } from "@/once-ui/components";
-
 const person = {
   firstName: "Aditya Ibrar",
   lastName: "Abdillah",
@@ -174,6 +172,30 @@ const about = {
     title: "Projects",
     skills: [
       {
+        title: "TransGo",
+        description: (
+          <>
+            TransGo is a digital platform designed to simplify the bus ticket
+            booking process. TransGo allows users to book bus tickets quickly
+            and easily, without the need to come directly to the counter or
+            ticket agent. The app not only offers convenience in booking
+            tickets, but also provides complete information regarding departure
+            schedules, routes, seat availability, and ticket prices in
+            real-time. With TransGo, users can plan their trips more efficiently
+            and flexibly.
+          </>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/transgo_video.mp4",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
         title: "SIMPRES",
         description: (
           <>
@@ -231,6 +253,35 @@ const about = {
           {
             src: "/images/projects/Si-Beka.png",
             alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+    ],
+  },
+  honor: {
+    display: true,
+    title: "Honor & Awards",
+    skills: [
+      {
+        title:
+          "Finalist in 6 th National Polytechnic Informatics Student Competition",
+        description: (
+          <>
+            I have achieved the title of Finalist in the E-Government category
+            at the 6th National Polytechnic Informatics Student Competition held
+            at Jakarta State Polytechnic from July 1 to 3, 2024. This experience
+            has provided me with the opportunity to develop my skills and
+            knowledge in the Mobile Development field, as well as exchange ideas
+            and innovations with fellow students from various polytechnics
+            across Indonesia.
+          </>
+        ),
+        images: [
+          {
+            src: "images/certificates/cert_kmipn.png",
+            alt: "Project Image",
             width: 16,
             height: 9,
           },
